@@ -1,0 +1,41 @@
+{
+  "name": "dsh-ars-agents",
+  "version": "1.0.0",
+  "description": "Seven DSH agent presets for academic research: a supervisor pipeline that dispatches to research / screener / writer / reviewer / verify / experiment specialists.",
+  "type": "module",
+  "license": "MIT",
+  "author": "chang30519-art",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chang30519-art/dsh-ars-agents.git"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-bundle",
+    "agent-preset",
+    "academic-research",
+    "literature-review"
+  ],
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
